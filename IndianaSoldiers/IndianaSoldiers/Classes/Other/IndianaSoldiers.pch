@@ -1,0 +1,39 @@
+//
+//  IndianaSoldiers.pch
+//  IndianaSoldiers
+//
+//  Created by qy on 16/5/5.
+//  Copyright © 2016年 qy. All rights reserved.
+//
+
+#import "QYConst.h"
+#import "UIView+Frame.h"
+#import "UIImage+QYImage.h"
+#import <MJExtension.h>
+#import <SVProgressHUD.h>
+#import "QYTool.h"
+#import "UserAccount.h"
+#import <AFNetworking.h>
+
+//当前的版本号
+#define QYVersion @"version"
+#define QYKeyWindow [UIApplication sharedApplication].keyWindow
+
+//统一网络请求地址
+#define QYURLLong @"http://112.74.80.51/indiana"
+#define QYURLShort @"http://112.74.80.51"
+
+
+/***********屏幕适配*************/
+#define QYScreenW [UIScreen mainScreen].bounds.size.width
+#define QYScreenH [UIScreen mainScreen].bounds.size.height
+#define iphone6P (QYScreenH == 736)
+#define iphone6 (QYScreenH == 667)
+#define iphone5 (QYScreenH == 568)
+#define iphone4 (QYScreenH == 480)
+/***********屏幕适配*************/
+
+
+#define QYColor(r,g,b) [UIColor colorWithRed:(r) / 256.0 green:(g) / 256.0 blue:(b) / 256.0 alpha:1]
+#define QYGrayColor(v) QYColor(v,v,v) //设置3个值一样
+#define QYRandomColor QYColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))

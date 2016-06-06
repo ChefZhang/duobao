@@ -1,0 +1,5 @@
+pod 'MJRefresh'
+pod 'SDWebImage', '~>3.7'
+pod 'MJExtension'
+pod 'SVProgressHUD'
+pod 'AFNetworking', '~> 3.0'
